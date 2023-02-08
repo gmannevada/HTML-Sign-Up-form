@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign-up Form</title>
+
+    <style>
+         form input, textarea, button {
+                display: block;
+                margin: 30px;               
+              }
+
+            .inln{
+                display: inline;
+                margin: 30px;
+                padding: 0;               
+            }
+    </style>
+ </head>
+<body>
+    <h1>Sign-up Form</h1>
+    <form name="registration" method="post"  data-netlify="true">
+        <input type="text" name="username" placeholder=" User Name" required>
+        <input type="password" name="password" placeholder="Pass word" required>
+        <input type="email"   name="email"      placeholder="Email Address" required>
+        <input type="tel"     name="phone_num"  placeholder="(555)444-5000"   pattern="[\(]\d{3}[\)]\d{3}[\-]\d{4}" required>
+        <input type="date">
+        <label for="tos" class="inln">I agree to the TOS:</label>
+        <input type="checkbox" name="tos" required  class="inln">
+        <button type="submit">Sign up</button>
+    </form>
+</body>
+</html>
